@@ -130,7 +130,7 @@ NotificationPrivate::NotificationPrivate(const QString& summary, Notification* p
     mInterface = new OrgFreedesktopNotificationsInterface("org.freedesktop.Notifications",
                                                           "/org/freedesktop/Notifications",
                                                           QDBusConnection::sessionBus(), this);
-    connect(mInterface, SIGNAL(NotificationClosed(uint, uint)), this, SLOT(notificationClosed(uint,uint)));
+    connect(mInterface, SIGNAL(NotificationClosed(uint,uint)), this, SLOT(notificationClosed(uint,uint)));
     connect(mInterface, SIGNAL(ActionInvoked(uint,QString)), this, SLOT(handleAction(uint,QString)));
 }
 

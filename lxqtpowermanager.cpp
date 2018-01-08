@@ -93,8 +93,8 @@ PowerManager::PowerManager(QObject * parent, bool skipWarning)
     m_power = new Power(this);
 //    connect(m_power, SIGNAL(suspendFail()), this, SLOT(suspendFailed()));
 //    connect(m_power, SIGNAL(hibernateFail()), this, SLOT(hibernateFailed()));
-//    connect(m_power, SIGNAL(monitoring(const QString &)),
-//            this, SLOT(monitoring(const QString&)));
+//    connect(m_power, SIGNAL(monitoring(QString)),
+//            this, SLOT(monitoring(QString)));
 
     QString sessionConfig(getenv("LXQT_SESSION_CONFIG"));
     Settings settings(sessionConfig.isEmpty() ? "session" : sessionConfig);
