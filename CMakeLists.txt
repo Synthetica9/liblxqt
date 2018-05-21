@@ -367,8 +367,6 @@ install(FILES ${LXQT_CONFIG_FILES}
     COMPONENT Runtime
 )
 
-install(FILES ${POLKIT_FILES} DESTINATION "${POLKITQT-1_POLICY_FILES_INSTALL_DIR}")
-
 #************************************************
 # Create and install pkgconfig file
 #************************************************
